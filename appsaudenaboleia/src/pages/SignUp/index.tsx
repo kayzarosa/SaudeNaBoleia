@@ -65,7 +65,7 @@ const SignUp: React.FC = () => {
 
         Alert.alert(
           'Cadastro realizado com sucesso!',
-          'Você já pode fazer o seu logon no GoBarber',
+          'Você já pode fazer o seu logon no Saúde na Boleia',
         );
 
         navigation.goBack();
