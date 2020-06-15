@@ -7,8 +7,8 @@ import {
   Platform,
   TextInput,
   Alert,
-  InteractionManagerStatic,
 } from 'react-native';
+
 import Icon from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
@@ -21,7 +21,7 @@ import Button from '../../components/Button';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/logoPequeno.png';
 
 import { Container, Title, BackToSignIn, BackToSignInText } from './styles';
 

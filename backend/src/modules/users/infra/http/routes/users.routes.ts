@@ -22,6 +22,7 @@ usersRouter.post(
       cpf: Joi.string().required(),
       email: Joi.string().email().required(),
       password: Joi.string().required(),
+      passwordConfirm: Joi.string(),
     },
   }),
   usersController.create,
