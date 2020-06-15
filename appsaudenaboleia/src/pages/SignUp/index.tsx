@@ -61,6 +61,14 @@ const SignUp: React.FC = () => {
           abortEarly: false,
         });
 
+        if (data.password !== data.passwordConfirm) {
+          Alert.alert(
+            'A senhas diferentes!',
+            'As senhas informadas são diferentes!',
+          );
+          return;
+        }
+
         await api.post('/users', data);
 
         Alert.alert(

@@ -47,7 +47,7 @@ const ForgetPassword: React.FC = () => {
           abortEarly: false,
         });
 
-        await api.post('/forgot', data);
+        await api.post('/password/forgot', data);
 
         Alert.alert(
           'Solicitação de recuperação de senha realizada com sucesso!',
@@ -65,8 +65,8 @@ const ForgetPassword: React.FC = () => {
         }
 
         Alert.alert(
-          'Erro no cadastro',
-          'Ocorreu um erro ao fazer o cadastro, tente novamente!',
+          'Erro ao recuperar senha',
+          'Ocorreu um erro ao recuperar senha, tente novamente!',
         );
       }
     },
